@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: "Roboto","Arial", sans-serif;
+}
+
+header {
+    padding: 0 16px;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.left-section img{
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.mid-section {
+    display: flex;
+    align-items: center;
+    margin-left: -9px;
+}
+.mid-section form{
+    display: flex;
+    height: 40px;
+    width: 628px;
+
+}
+.mid-section input{
+    width: 100%;
+    border-radius: 2px 0 0 2px;
+    padding: 12px;
+    font-size: 1.6rem;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+}
+.mid-section button{
+    width: 50px;
+    border: 1px solid #d3d3d3;
+    border-radius:0  2px 2px 0;
+    background-color: #f8f8f8;
+    cursor: pointer;
+ 
+}
+
+.mid-section .mic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.mid-section button:hover{
+    background-color: #f0f0f0;
+    border-color: #c6c6c6;
+}
+
+.right-section a{
+    display: inline-block;
+    padding-right: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.content-area{
+    height: calc(100vh - 56px);
+    display: flex;   
+    background-color: #f9f9f9;              /*whyyyyyy*/
+}
+aside{
+    height: 100%;
+    width: 280px;
+    background-color: white;
+    overflow-y: auto;
+}
+nav{
+    padding-right: 15px;
+    width: 100%;
+    flex-direction: column;
+    margin: 15px 0;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+.content-area a span{
+    margin-left: 24px;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1em;
+    color: #030303;
+}
+.content-area .active{
+    background-color: #e5e5e5;
+}
+.content-area .active-span{
+    font-weight: 900;
+}
+.nav-link:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+hr{
+    opacity: 0.3; /* why border none and backg color e5 58min*/
+    margin-top: 10px;
+    height: 1px;
+}
+
+nav p{
+    color: #606060;
+    font-weight: 600;
+    padding: 8px 16px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+nav .nav-link .channel-img{
+    height:24px ;
+    width: 24px;
+    border-radius:50% ;
+
+}
+nav .nav-link span{
+    margin-left: 24px;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1em;
+    color: #030303;
+}
+
+
+nav .subs :hover{
+    background-color: #606060 !important;
+}
+
+
+main{
+    width: 100%;
+    height: 100%;
+    padding: 35px 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: auto;
+}
+main .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+main .card{
+    width: 330px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    
+}
+
+main .pic{
+    width: 100%;
+    height: 187px;
+}
+main .card .info .creator-img{
+    height: 35px ;
+    width: 35px;
+    border-radius:50% ;
+
+    /* box-sizing: border-box; whyyy the padding does not change */
+    /* padding-top: 20px;     */
+}
+
+
+main .info{
+    display: flex;
+    align-items: center;
+    
+}
+main .text{
+    padding-left: 12px;
+}
+main .text .title{
+    margin-bottom: 9px;
+    padding-top: 9px;
+    color: #030303;
+    font-weight: 600;
+    font-size: 13px;
+}
+main .text .video-info{
+    color:#4a4a4a;
+    font-weight: 600;
+}
